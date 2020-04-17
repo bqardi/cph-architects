@@ -51,6 +51,11 @@ document.addEventListener("DOMContentLoaded", event => {
         },
     }
 
+    const timeout = 8000;
+    const transition = 8000;
+    let slideIndex = 0;
+
+    setInlineStyle("coffee");
     createMenuLinks();
 
     burger.addEventListener("click", menuToggle);
@@ -70,16 +75,26 @@ document.addEventListener("DOMContentLoaded", event => {
         });
     }
 
+    if (backgroundProfileSlides.length > 0) {
+        for (let i = 0; i < backgroundProfileSlides.length; i++) {
+            const backgroundProfileSlide = backgroundProfileSlides[i];
+            backgroundProfileSlide.style = `transition: opacity ${transition}ms; animation-duration: ${timeout + transition + 4000}ms;`;
+        }
+        setTimeout(() => {
+            changeSlide();
+        }, timeout + transition);
+    }
+
     function menuToggle(e) {
         e.preventDefault();
         menu.classList.toggle("js-active");
         menuPush.classList.toggle("js-active");
     }
 
-    function menuShow() {
-        menu.classList.add("js-active");
-        menuPush.classList.add("js-active");
-    }
+    // function menuShow() {
+    //     menu.classList.add("js-active");
+    //     menuPush.classList.add("js-active");
+    // }
 
     function menuHide() {
         menu.classList.remove("js-active");
@@ -94,7 +109,6 @@ document.addEventListener("DOMContentLoaded", event => {
     }
 
     function createMenuLinks() {
-        setInlineStyle("coffee");
         for (let i = 0; i < menuObj.menuLinks.length; i++) {
             const menuLink = menuObj.menuLinks[i];
             let link = document.createElement("A");
@@ -113,16 +127,6 @@ document.addEventListener("DOMContentLoaded", event => {
         }`;
 
     }
-    const timeout = 8000;
-    const transition = 8000;
-    let slideIndex = 0;
-    for (let i = 0; i < backgroundProfileSlides.length; i++) {
-        const backgroundProfileSlide = backgroundProfileSlides[i];
-        backgroundProfileSlide.style = `transition: opacity ${transition}ms; animation-duration: ${timeout + transition + 4000}ms;`;
-    }
-    setTimeout(() => {
-        changeSlide();
-    }, timeout + transition);
 
     function changeSlide() {
         const prevSlideIndex = slideIndex;
@@ -139,18 +143,6 @@ document.addEventListener("DOMContentLoaded", event => {
         }, timeout + transition);
     }
     //#endregion HEADER MENU
-
-    //#region ARCHITECT
-    getValue("name");
-
-    function getValue(parameter) {
-        let url = window.location.search;
-        const searchStr = `?${parameter}=`;
-        url = url.replace(searchStr, "");
-        console.log(url);
-    }
-    //#endregion ARCHITECT
-
 });
 
 //#region GOOGLE MAPS

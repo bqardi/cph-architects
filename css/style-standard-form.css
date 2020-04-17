@@ -1,0 +1,50 @@
+/* #region STANDARD FORM */
+
+.standard-form {
+    margin: 20px 0;
+}
+
+.standard-form--grid {
+    --standard-form-clm-count: 1;
+    display: grid;
+    grid-template-columns: repeat(var(--standard-form-clm-count), 1fr);
+    gap: 10px;
+}
+
+.standard-form--grid__span {
+    grid-column: span var(--standard-form-clm-count);
+}
+
+.standard-form--grid__last {
+    grid-column: var(--standard-form-clm-count);
+    display: flex;
+    justify-content: flex-end;
+}
+
+.standard-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.standard-form input,
+.standard-form textarea,
+.standard-form button {
+    padding: 10px 16px;
+    width: 100%;
+    border: 1px solid #a8a8a8;
+    border-radius: 5px;
+}
+
+.standard-form button {
+    max-width: 120px;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 720px) {
+    .standard-form--grid {
+        --standard-form-clm-count: 3;
+    }
+}
+
+
+/* #endregion STANDARD FORM */
