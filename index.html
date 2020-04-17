@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Lidt om Københavns arkitekter gennem tiden">
+    <title>CPH Architects - Hjem</title>
+    <!-- <script rel="dns-prefetch" src="https://kit.fontawesome.com/00c72fd824.js" crossorigin="anonymous" defer></script> -->
+    <link rel="preload stylesheet" href="css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="css/style.css"></noscript>
+    <link rel="shortcut icon" href="../images/logo.png" type="image/png">
+    <script src="js/index.js" defer></script>
+    <style id="inline-style"></style>
+</head>
+
+<body>
+    <div id="background-profile" class="background-profile">
+        <img class="background-profile__slider js-active" src="images/hansen/cfhansen.jpg" alt="">
+        <img class="background-profile__slider js-inactive" src="images/jacobsen/Arne_Jacobsen_photo.jpg" alt="">
+        <img class="background-profile__slider js-inactive" src="images/mehldahl/Ferdinand_Meldahl_1827-1908.jpg" alt="">
+        <img class="background-profile__slider js-inactive" src="images/nyrop/Martin_Nyrop_580.jpg" alt="">
+    </div>
+    <header class="main-header">
+        <div class="menu">
+            <a class="menu__logo" href="#">CPH Architects</a>
+            <nav id="menu" class="menu__navigation">
+                <div id="color-picker" class="color-picker">
+                    <h3 class="color-picker__title">Color themes</h3>
+                    <nav class="color-picker__links">
+                        <a class="color-picker__link js-active" href="#" style="background-color: #5a332c;" aria-label="coffee" data-label="coffee">
+                            <svg viewBox="0 0 24 24"><path d="M2,21H20V19H2M20,8H18V5H20M20,3H4V13A4,4 0 0,0 8,17H14A4,4 0 0,0 18,13V10H20A2,2 0 0,0 22,8V5C22,3.89 21.1,3 20,3Z"></path></svg>
+                        </a>
+                        <a class="color-picker__link" href="#" style="background-color: #92b8b7;" aria-label="mint" data-label="mint">
+                            <svg viewBox="0 0 24 24"><path d="M17,8C8,10 5.9,16.17 3.82,21.34L5.71,22L6.66,19.7C7.14,19.87 7.64,20 8,20C19,20 22,3 22,3C21,5 14,5.25 9,6.25C4,7.25 2,11.5 2,13.5C2,15.5 3.75,17.25 3.75,17.25C7,8 17,8 17,8Z"></path></svg>
+                        </a>
+                        <a class="color-picker__link" href="#" style="background-color: #437007;" aria-label="lemon" data-label="lemon">
+                            <svg viewBox="0 0 24 24"><path d="M9 15.9C6.9 15.7 5.1 14.9 4 13.6C3.2 13.6 2.4 13.1 2.1 12.3C1.8 11.5 2.1 10.7 2.8 10.2C2.9 7.2 5.6 4.1 9.7 2.7C13.8 1.3 18 2.1 20 4.4C20.8 4.4 21.6 4.9 21.9 5.7C22.2 6.5 21.9 7.3 21.2 7.8C21.2 8.6 21 9.4 20.6 10.2C19.4 9.5 18 9 16.5 9C12.6 9 9.3 12 9 15.9M22 16.5C22 19.5 19.5 22 16.5 22S11 19.5 11 16.5 13.5 11 16.5 11 22 13.5 22 16.5M13.3 18L15.6 16.5L13.3 15C13.1 15.5 13 16 13 16.5S13.1 17.5 13.3 18M16 17.4L13.9 18.8C14.4 19.4 15.2 19.8 16 20V17.4M16 13.1C15.2 13.2 14.4 13.6 13.9 14.3L16 15.7V13.1M17 15.6L19.1 14.2C18.6 13.6 17.8 13.2 17 13V15.6M19.1 18.8L17 17.4V19.9C17.8 19.8 18.6 19.4 19.1 18.8M20 16.5C20 16 19.9 15.5 19.7 15L17.4 16.5L19.7 18C19.9 17.5 20 17 20 16.5Z"></path></svg>
+                        </a>
+                        <a class="color-picker__link" href="#" style="background-color: #73141B;" aria-label="cherry" data-label="cherry">
+                            <svg viewBox="0 0 24 24"><path d="M16 13H15.5C14.8 11.7 14.3 10 13.8 8.3L14.7 9.2C17.4 11.3 19.8 10.9 19.8 10.9S20.5 7.1 17.8 5.1C15.5 3.3 13.4 3.3 12.8 3.4C12.7 2.8 12.7 2.3 12.6 1.9L11.2 2C11.2 5.2 8.5 11.1 7.6 13C5.6 13.2 4 14.9 4 17C4 19.2 5.8 21 8 21C9.1 21 10 20.6 10.7 19.9C10.3 19 10 18 10 17S10.3 15 10.7 14.1C10.3 13.7 9.7 13.4 9.2 13.2C9.9 11.7 11.1 9 11.9 6.4C12.3 8.7 13.1 11.4 14.1 13.5C12.9 14.2 12 15.5 12 17C12 19.2 13.8 21 16 21S20 19.2 20 17 18.2 13 16 13M8 15.5C7.2 15.5 6.5 16.2 6.5 17H5.5C5.5 15.6 6.6 14.5 8 14.5V15.5M16 15.5C15.2 15.5 14.5 16.2 14.5 17H13.5C13.5 15.6 14.6 14.5 16 14.5V15.5Z"></path></svg>
+                        </a>
+                    </nav>
+                </div>
+            </nav>
+            <nav class="menu__color-picker">
+                <a id="color-picker-button" href="#">
+                    <svg viewBox="0 0 24 24"><path d="M3.88,3C3.38,3.06 3,3.5 3,4V4L3,5H4L5,5V4L5,3H4L3.88,3M7,3V5H9V3H7M11,3V5H13V3H11M15,3V5H17V3H15M19,3V4L19,5H20L21,5V4L21,3.88C20.94,3.38 20.5,3 20,3H19M3,7V9H5V7H3M19,7V9H21V7H19M3,11V13H5V11H3M19.31,12C19.18,12 19.05,12.05 18.95,12.14L17.39,13.71L16.43,12.75L15.72,13.46L16.43,14.17L11.97,18.63V21H14.35L18.8,16.54L19.5,17.25L20.22,16.54L19.26,15.58L20.82,14.03C21,13.83 21,13.5 20.82,13.31L19.65,12.14C19.56,12.05 19.44,12 19.31,12M3,15V17H5V15H3M17,15L17.97,15.97L13.93,20L12.97,19.04L17,15M3,19V20L3,20.12C3.06,20.62 3.5,21 4,21V21H5V20L5,19H4L3,19M7,19V21H9V19H7Z"></path></svg>
+                </a>
+            </nav>
+            <nav class="menu__burger">
+                <a id="burger" href="#">
+                    <svg viewBox="0 0 24 24"><path d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z"></path></svg>
+                </a>
+            </nav>
+        </div>
+    </header>
+    <div id="menu-push" class="page-wrapper">
+        <main class="main-content">
+            <h1>Big heading</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent accumsan magna quis risus maximus, nec posuere neque consequat. Curabitur nec mattis arcu. Cras metus ligula, condimentum vel ullamcorper vel, sodales vel nunc. Sed nulla justo, scelerisque
+                eu ullamcorper vel, vulputate eget dolor. Integer ac sodales augue, quis rhoncus massa. Quisque fermentum eget nibh sed vulputate.
+            </p>
+            <div class="card-container">
+                <a class="card" href="hansen.html">
+                    <div class="card__image-container">
+                        <img class="card__image" src="images/hansen/cfhansen.jpg" alt="C.F. Hansen / Christian Frederik Hansen">
+                    </div>
+                    <section class="card-description">
+                        <div class="card__inner">
+                            <h2>C.F. Hansen</h2>
+                            <p>
+                                Christian Frederik Hansen (født 29. februar 1756 i København, død 10. juli 1845 på Rolighed på Frederiksberg) var en dansk, klassicistiskarkitekt, kgl. hofbygmester, professor og direktør for Kunstakademiet. Han regnes for en af de væsentligste arkitekter
+                                i danmarkshistorien og C.F. Hansen var en meget fremtrædende og indflydelsesrig arkitekt i København i begyndelsen af 1800-tallet. Byen var udsat for flere katastrofer: Christiansborgs brand i 1794, Københavns brand i 1795 samt Københavns
+                                bombardement i 1807. Store dele af København skulle genopbygges i disse år, og C.F. Hansen satte sit præg ved at stå bag markante bygninger som Vor Frue Kirke, det andet (senere nedbrændte) Christiansborghvoraf Slotskirken er
+                                bevaret, Metropolitanskolen og Domhuset, som oprindelig var tegnet til også at være rådhus, men som nu udfyldes af Københavns Byret.  På Akademiets store stipendium rejste Hansen nu til udlandet og blev borte i to et halvt
+                                år. Som tidens retning og hans opdragelse medførte, var det den antikke kunst, særlig den romerske, han studerede, og de store, omhyggelig gennemførte studietegninger i Kunstakademiets Bibliotek vidne om hans arbejdes alvor
+                                og flid. Disse indtrængende studier blev den solide grundvold for hele hans fremtidige virksomhed. Efter sin hjemkomst blev han 1785 medlem af Akademiet og kort efter udnævnt til bygningsinspektør for hertugdømmerne Slesvig og Holsten med
+                                bopæl i Altona. 1791 blev han titulær professor, og 1792 ægtede han Anne Margrethe Rahbek (født 1773), datter af toldinspektør Jacob Rahbek og halvsøster til digteren Knud Lyne Rahbek. Hansen kom til at udøve en sjælden
+                                storartet virksomhed som bygmester i Danmark. Det lykkedes således C.F. Hansen i enestående grad at sætte sit præg på København i første halvdel af 1800-tallet igennem en række store offentlige bygninger. Han fik sådanne
+                                opgaver at løse som opførelsen af Råd- og Domhuset, færdigt 1815, Metropolitanskolen, færdig 1815, Christiansborg Slots genopførelse og slotskirken, færdige 1826—28, Vor Frue Kirke, færdig 1828, og uden for København blandt
+                                andet Hørsholm Kirke 1823, der ligesom hans slesvigske kirkebygninger er miniatureudgave af vor Frue Kirke, "Vilhelmsdal" på Strandvejen med den bekendte halvrunde altan, hvilende på svære, ved rundbuer forbundne, doriske
+                                søjler, og flere kirker og privatbygninger, således et landsted ved Frederiksborg. (Kilde: Wikipedia)
+                            </p>
+                        </div>
+                        <span class="card__read-more">Læs mere...</span>
+                    </section>
+                </a>
+                <a class="card" href="jacobsen.html">
+                    <div class="card__image-container">
+                        <img class="card__image" src="images/jacobsen/Arne_Jacobsen_photo.jpg" alt="Arne Jacobsen">
+                    </div>
+                    <section class="card-description">
+                        <div class="card__inner">
+                            <h2>Arne Jacobsen</h2>
+                            <p>
+                                Arne Emil Jacobsen (født 11. februar 1902 i København, død 24. marts 1971 i København[2]) var en dansk arkitekt og formgiver, som var med til at indføre modernismen i Danmark. Han har internationalt ry og er en af Danmarks mest kendte designere. Arne
+                                Jacobsen flygtede i 1943 til Sverige sammen med tusindvis af andre danske jøder og blev der til krigens afslutning. Han er i dag internationalt kendt og anerkendt især for sine stole: Syveren, Myren, Svanen og Ægget. Arne
+                                Jacobsen blev uddannet på Kunstakademiet i København, hvor han 1956-1965 underviste som professor i bygningskunst inspireret af Le Corbusier. Midt i 1990'erne opstod der i Danmark og internationalt en fornyet interesse
+                                for modernismens møbelkunst og dansk design. Det affødte en stigende efterspørgsel efter Arne Jacobsens møbler og kunstindustrielle produktion. Arne Jacobsen er begravet på Ordrup Kirkegård. Efter sin død i 1971 er Arne
+                                Jacobsens tegnestue blevet videreført af tegnestuen Dissing+Weitling. (Kilde: Wikipedia)
+                            </p>
+                        </div>
+                        <span class="card__read-more">Læs mere...</span>
+                    </section>
+                </a>
+                <a class="card" href="mehldahl.html">
+                    <div class="card__image-container">
+                        <img class="card__image" src="images/mehldahl/Ferdinand_Meldahl_1827-1908.jpg" alt="Ferdinand Meldahl">
+                    </div>
+                    <section class="card-description">
+                        <div class="card__inner">
+                            <h2>Ferdinand Meldahl</h2>
+                            <p>
+                                Ferdinand Meldahl (16. marts 1827 på Frederiksberg – 3. februar 1908 i København) var en dansk arkitekt, etatsråd, kammerherre og borgerrepræsentant. Han udøvede meget stor indflydelse på arkitektur og kunst i anden halvdel af 1800-tallet. Meldahl var
+                                på den ene side kosmopolitisk orienteret, visionær og produktiv og på den anden side en konservativ natur, hvis idealer blev forkastet af den efterfølgende kunstner- og arkitektgeneration. Fra 1860 fungerede han som kgl.
+                                bygningsinspektør, og fra 1866 og 27 år frem sad han i Københavns Borgerrepræsentation. Desuden havde han utallige hverv som rådgiver, dommer og kommissionsmedlem. Meldahl var en magtfuld og omdiskuteret person, der på
+                                mange måder indtog en parallel position til overbygningsdirektør og akademidirektør C.F. Hansen et halvt århundrede tidligere. For de unge nationalromantiske arkitekter i kredsen omkring Martin Nyrop, P.V. Jensen Klint og Ulrik
+                                Plesnerblev han opfattet som bagstræberisk figur, der modarbejdede en personlig kreativitet i arkitektarbejdet med sin akademiske insisteren på at kopiere fortidens stilarter og på den korrekte gengivelse af fortidige stilmotiver.
+                                Han hørte til de såkaldte "europæere", dvs. historicistiske arkitekter, der gik ind for kopiering af fortidens europæiske arkitektur og stilarter. Meldahl var sig til gengæld sin kosmopolitiske indstilling bevidst. Han
+                                ønskede at skabe et København, der kunne – og skulle – måle sig med Napoleon III's Paris, og vejen frem var dermed kopiering af den bedste udenlandske arkitektur. Kunne man ikke få Paris' skala, kunne man i det mindste
+                                skabe en stemning af arkitektonisk grandeur. Konkurrencen om Københavns Rådhus blev et omdrejningspunkt for striden mellem Meldahl og Nyrop-fløjen. Meldahl prøvede til det sidste at forhindre Nyrops projekt i at blive virkeliggjort,
+                                selvom han havde vundet i to konkurrencer. At Nyrop sejrede, og at Meldahls favorit i konkurrencen, Valdemar Koch, selv erkendte, at Nyrops forslag var hans projekt overlegent og mere moderne, viste, at der blæste nye vinde
+                                inden for arkitekturen. (Kilde: Wikipedia)
+                            </p>
+                        </div>
+                        <span class="card__read-more">Læs mere...</span>
+                    </section>
+                </a>
+                <a class="card" href="nyrop.html">
+                    <div class="card__image-container">
+                        <img class="card__image" src="images/nyrop/Martin_Nyrop_580.jpg" alt="Martin Nyrop">
+                    </div>
+                    <section class="card-description">
+                        <div class="card__inner">
+                            <h2>Martin Nyrop</h2>
+                            <p>
+                                Martin Nyrop (11. november 1849 på Holmsland ved Ringkøbing Fjord – 18. maj 1921 i København) var en dansk arkitekt, professor ved og direktør for Kunstakademiet. Han var den væsentligste eksponent for nationalromantikken i dansk arkitektur omkring år 1900.
+                                Samtidig øvede han stor indflydelse på den efterfølgende generation af danske arkitekter. Hans hovedværk er Københavns Rådhus, der også er internationalt berømmet. Nyrop var søn af sognepræst Christopher Nyrop (1805–79)
+                                og Helene f. Ahlmann (1807–74). Han blev født på Holmsland ved Ringkøbing Fjord. Da hans forfædre i fem slægtled havde været præster i Danmark og Norge, blev Nyrop selvfølgelig sat til at studere og tilbragte årene 1859–1865 på Sorø
+                                Akademi, men forlod det uden at tage eksamen. Herefter gik han i tømrerlære og blev svend i 1869. Han besøgte derefter Kunstakademiet, hvorfra han fik afgangsbevis i 1876, den lille guldmedalje i 1877 for et Skulpturmusæum og
+                                den store guldmedalje i 1880 for en Børs til en større Hovedstad. I 1881–83 foretog han en større udlandsrejse på Akademiets stipendium, 1883–93 var han assistent hos Hans J. Holm på Kunstakademiets Arkitektskoles forberedelsesklasse
+                                og 1884-93ansvarlig for dag- og aftenundervising. Før sin udlandsrejse havde Nyrop tegnet gasbeholderen på Østre Gasværk, hvor Østre Gasværk Teater, en del af Østerbro Teater, i dag har til huse. Mange af Nyrups arbejder
+                                røber en ualmindelig originalitet og et nyt og rationelt syn på mange forhold i bygningskunsten, men det er dog store arbejder som Københavns Rådhus, begyndt 1892, som har gjort Nyrops navn berømt ude og hjemme. (Kilde:
+                                Wikipedia)
+                            </p>
+                        </div>
+                        <span class="card__read-more">Læs mere...</span>
+                    </section>
+                </a>
+            </div>
+        </main>
+    </div>
+    <footer class="main-footer">
+        <div class="main-footer__grid">
+            <address class="main__footer-address">
+                <span>CPH Achitects</span>
+                <span>Piet Hein's Gade 42</span>
+                <span>DK-2820 Søborg</span>
+                <a href="tel:+4512345678">+45 12 34 56 78</a>
+                <a href="mailto:hello@cpharchitect.dk">hello@cpharchitect.dk</a>
+            </address>
+            <div class="main__footer-social">
+                <a href="#" class="main__footer-social-icon">
+                    <svg viewBox="0 0 24 24"><path d="M12 2.04C6.5 2.04 2 6.53 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.85C10.44 7.34 11.93 5.96 14.22 5.96C15.31 5.96 16.45 6.15 16.45 6.15V8.62H15.19C13.95 8.62 13.56 9.39 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96A10 10 0 0 0 22 12.06C22 6.53 17.5 2.04 12 2.04Z"></path></svg>
+                </a>
+                <a href="#" class="main__footer-social-icon">
+                    <svg viewBox="0 0 24 24"><path d="M22.46,6C21.69,6.35 20.86,6.58 20,6.69C20.88,6.16 21.56,5.32 21.88,4.31C21.05,4.81 20.13,5.16 19.16,5.36C18.37,4.5 17.26,4 16,4C13.65,4 11.73,5.92 11.73,8.29C11.73,8.63 11.77,8.96 11.84,9.27C8.28,9.09 5.11,7.38 3,4.79C2.63,5.42 2.42,6.16 2.42,6.94C2.42,8.43 3.17,9.75 4.33,10.5C3.62,10.5 2.96,10.3 2.38,10C2.38,10 2.38,10 2.38,10.03C2.38,12.11 3.86,13.85 5.82,14.24C5.46,14.34 5.08,14.39 4.69,14.39C4.42,14.39 4.15,14.36 3.89,14.31C4.43,16 6,17.26 7.89,17.29C6.43,18.45 4.58,19.13 2.56,19.13C2.22,19.13 1.88,19.11 1.54,19.07C3.44,20.29 5.7,21 8.12,21C16,21 20.33,14.46 20.33,8.79C20.33,8.6 20.33,8.42 20.32,8.23C21.16,7.63 21.88,6.87 22.46,6Z"></path></svg>
+                </a>
+                <a href="#" class="main__footer-social-icon">
+                    <svg viewBox="0 0 24 24"><path d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z"></path></svg>
+                </a>
+            </div>
+            <div class="copyright">
+                Ophavsret &copy;, alle rettigheder forbeholdes
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
