@@ -14,9 +14,6 @@
     --inline-dropdown-menu-height: 280px;
     --inline-color-picker-height: 100px;
     --inline-dropdown-menu-speed: 300ms;
-}
-
-html {
     font-size: 16px;
 }
 
@@ -48,8 +45,8 @@ address {
 }
 
 svg {
-    width: 32px;
-    height: 32px;
+    width: 2rem;
+    height: 2rem;
     fill: var(--off-light);
 }
 
@@ -195,8 +192,6 @@ svg {
 }
 
 .menu .menu__burger a svg {
-    width: 32px;
-    height: 32px;
     fill: var(--off-light);
     transition: fill 150ms;
 }
@@ -395,7 +390,7 @@ svg {
 .card-description {
     height: var(--card-height);
     max-height: var(--card-max-height);
-    padding: 16px;
+    padding: var(--general-spacing);
     display: flex;
     flex-direction: column;
 }
@@ -447,6 +442,7 @@ svg {
 
 .card-big__image-container {
     overflow: hidden;
+    height: 45vw;
 }
 
 .card-big__image {
@@ -458,7 +454,7 @@ svg {
 }
 
 .card-big__description {
-    padding: 16px;
+    padding: var(--general-spacing);
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -545,8 +541,8 @@ svg {
 }
 
 .main__footer-social-icon {
-    width: 48px;
-    height: 48px;
+    width: 3rem;
+    height: 3rem;
     background-color: var(--dark);
     display: flex;
     justify-content: center;
@@ -618,6 +614,7 @@ svg {
      :root {
         --page-padding: 10%;
         --general-spacing: 32px;
+        font-size: 20px;
     }
     .menu {
         margin: 0 var(--page-padding);
@@ -661,7 +658,6 @@ svg {
         width: 100%;
         opacity: 0;
         overflow: hidden;
-        border-radius: 0 0 8px 8px;
         background-color: transparent;
         transition: height var(--inline-dropdown-menu-speed), opacity var(--inline-dropdown-menu-speed);
     }
@@ -669,11 +665,11 @@ svg {
         color: var(--off-dark);
     }
     .menu__navigation.js-active .color-picker {
-        height: var(--inline-color-picker-height);
+        height: calc(var(--inline-color-picker-height) + 1rem);
         opacity: 1;
     }
     #menu-push.js-active {
-        margin-top: var(--inline-color-picker-height);
+        margin-top: calc(var(--inline-color-picker-height) + 1rem);
     }
     /* #endregion HEADER MENU */
     /* #region CARD BIG */
